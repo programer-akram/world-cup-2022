@@ -98,6 +98,20 @@ background-color: white;
     padding-right: 10px;
 }
 
+/* Only for Tab */
+.only-tab {
+    color: white;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: red;
+    justify-items: center;
+    width: 100px;
+    height: 40px;
+    padding-top: 10px;
+    display: none;
+
+}
 
 
 /* footer */
@@ -280,7 +294,11 @@ hr{
         
         }
 
+/* Only for Tab */
 
+    .only-tab{
+        display: block;
+    }
     
 /* footer */
 
