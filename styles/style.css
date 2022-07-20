@@ -2,6 +2,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-color: rgb(56, 178, 219);
 }
 
 /* Banner */
@@ -79,6 +80,7 @@ background-color: white;
     grid-template-columns: repeat(3,3fr);
     row-gap: 24px;
     column-gap: 24px;
+    margin-bottom: 50px;
 }
 
 
@@ -92,8 +94,11 @@ background-color: white;
 }
 .icons{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding-right: 10px;
 }
+
+
 
 /* footer */
 footer{
@@ -120,4 +125,170 @@ hr{
     padding: 21px 21px;
     color: gray;
     
+}
+
+
+
+/* Media queries */
+
+/* For Mobile Phones */
+@media only screen and (max-width: 688px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        background-color: black;
+            margin: 15px 5px 10px 5px;
+            border-radius: 10px;
+            width: 320px;
+            height: 472px;
+    }
+
+    .banner-title {
+        padding-left: 53px;
+    }
+
+    .banner-title h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .banner-image img {
+
+        width: 130px;
+        higrt: 180px;
+        padding-bottom: 0;
+        padding-left: 70px;
+    }
+/*  main */
+    main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* Left side */
+
+    .left-side p{
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .left-side {
+           background-color: rgb(56, 178, 219); 
+            border-radius: 10px;
+           
+            margin-left: 10px;
+            margin-right: 24px;
+            margin-bottom: 15px;
+    }
+
+    /* Right side */
+
+    .right-side{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 10px;
+        padding-right: 80px;
+    }
+
+    /* footer */
+        hr{
+            width: 285px;
+        }
+        .options,
+        .social-media {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-items: center;
+        }
+}
+
+/* For Tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width:992px){
+
+    /* Body */
+    body{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        }
+    /* Header */
+
+    header{
+            display: flex;
+            background-color: black;
+            border-radius: 10px;
+            width: 724px;
+            height: 398px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 50px;
+            }
+
+    .banner-title h1 {
+            font-size: 30px;
+            font-weight: 700;
+             color: white;
+            }
+
+    .banner-image img {
+
+            width: 323px;
+            higrt: 340px;
+            padding-left: 70px;
+            padding-right: 0;
+            }
+
+      /* Main */
+      main{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        
+      }
+
+    /* Left side */
+
+    .left-side{
+        display: flex;
+        background-color: rgb(56, 178, 219);
+        margin-bottom: 30px;
+     }
+
+    .left-side p {
+         border: 1px solid white;
+         width: 200px;
+         height: 50px;
+         color: black;
+         border-radius: 10px;
+         margin-left:  5px;
+         text-align: center;
+         padding-top: 10px;
+         justify-items: center;
+         font-weight: 700;
+        font-size: 16px;
+        }
+
+    /* Right side */
+
+        .right-side {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        
+        }
+
+
+    
+/* footer */
+
+footer{
+    margin-left: 0;
+    margin-right: 0;
+}
+hr{
+    width: 500px;
+}
 }
